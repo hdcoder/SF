@@ -1,4 +1,4 @@
-package hiteshdua1.codescripter.sf;
+package hiteshdua1.codescripter.sf.Fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,23 +7,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SampleSlide extends Fragment {
+public class fragment_intro extends Fragment {
 
     private static final String ARG_LAYOUT_RES_ID = "layoutResId";
 
-    public static SampleSlide newInstance(int layoutResId) {
-        SampleSlide sampleSlide = new SampleSlide();
+    public static fragment_intro newInstance(int layoutResId) {
+        fragment_intro fragmentintro = new fragment_intro();
 
         Bundle args = new Bundle();
         args.putInt(ARG_LAYOUT_RES_ID, layoutResId);
-        sampleSlide.setArguments(args);
+        fragmentintro.setArguments(args);
 
-        return sampleSlide;
+        return fragmentintro;
     }
 
     private int layoutResId;
 
-    public SampleSlide() {}
+    public fragment_intro() {}
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

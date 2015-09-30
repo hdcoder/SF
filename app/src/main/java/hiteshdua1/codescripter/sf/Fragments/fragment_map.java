@@ -254,11 +254,11 @@ public class fragment_map extends Fragment {
             {
                 Centers o = new Centers();
                 o = centres.get(i);
-                ShowMarker(Double.parseDouble(o.lat), Double.parseDouble(o.lon),o.title,R.drawable.dart);
+                ShowMarker(Double.parseDouble(o.lat), Double.parseDouble(o.lon),o.title,R.drawable.ic_pin_drop_black_24dp);
             }
 
             if(latitude!=null && longitude!=null)
-                ShowMarker(latitude,longitude,"",R.drawable.sf);
+                ShowMarker(latitude,longitude,"",R.drawable.ic_pin_drop_black_24dp);
         }
     }
 

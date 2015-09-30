@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import hiteshdua1.codescripter.sf.Fragments.fragment_main;
 import hiteshdua1.codescripter.sf.Fragments.fragment_map;
 import hiteshdua1.codescripter.sf.NavigationDrawer.FragmentDrawer;
 
@@ -36,9 +37,9 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
 
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        Fragment f = new fragment_map();
+        Fragment f = new fragment_main();
         ft.replace(R.id.container_body, f);
-        getSupportActionBar().setTitle("Volunteer Programmes");
+        getSupportActionBar().setTitle("SF Foundation");
         ft.commit();
 
     }
@@ -52,14 +53,18 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             case 0:
                 Fragment f1 = new fragment_map();
                 ft.replace(R.id.container_body, f1);
-                getSupportActionBar().setTitle("Centres");
+                getSupportActionBar().setTitle("Events");
                 ft.commit();
                 break;
             case 1:
-                Fragment f2 = new fragment_map();
-                ft.replace(R.id.container_body, f2);
-                getSupportActionBar().setTitle("Centres");
+                Fragment f = new fragment_main();
+                ft.replace(R.id.container_body, f);
+                getSupportActionBar().setTitle("SF Foundation");
                 ft.commit();
+//                Fragment f2 = new fragment_map();
+//                ft.replace(R.id.container_body, f2);
+//                getSupportActionBar().setTitle("Centres");
+//                ft.commit();
                 break;
 
             case 2:

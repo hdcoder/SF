@@ -6,13 +6,16 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.github.paolorotolo.appintro.AppIntro;
-public class FadeAnimation extends AppIntro {
+
+import hiteshdua1.codescripter.sf.Fragments.fragment_intro;
+
+public class AppIntroActivity extends AppIntro {
     @Override
     public void init(Bundle savedInstanceState) {
-        addSlide(SampleSlide.newInstance(R.layout.intro));
-        addSlide(SampleSlide.newInstance(R.layout.intro2));
-        addSlide(SampleSlide.newInstance(R.layout.intro3));
-        addSlide(SampleSlide.newInstance(R.layout.intro4));
+        addSlide(fragment_intro.newInstance(R.layout.intro));
+        addSlide(fragment_intro.newInstance(R.layout.intro2));
+        addSlide(fragment_intro.newInstance(R.layout.intro3));
+        addSlide(fragment_intro.newInstance(R.layout.intro4));
 
         setFadeAnimation();
     }

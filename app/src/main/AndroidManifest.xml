@@ -24,8 +24,7 @@
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDay6Qbk3MQD4Z80MH_HnR36TJGTrd2Ddc" />
-        <!-- "AIzaSyCmmTcw4LR_qzSaGcl6orGV4S6nfHDhlss" -->
+            android:value="AIzaSyB0SmqeUmqW7sD0UeqIqUApQ7tQ9bR58p0" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -35,7 +34,7 @@
             android:label="@string/title_activity_main" >
         </activity>
         <activity
-            android:name=".FadeAnimation"
+            android:name=".AppIntroActivity"
             android:label="@string/title_activity_test" >
         </activity>
     </application>
