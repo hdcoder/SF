@@ -11,4 +11,18 @@
 
     <string name="drawer_close">Close navigation drawer</string>
     <string name="title_activity_test">TestActivity</string>
+
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_home2">Centres</string>
+    <string name="nav_item_home3">Signout</string>
+    <string name="nav_item_home5">Events</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_home2</item>
+        <item>@string/nav_item_home5</item>
+        <item>@string/nav_item_home3</item>
+    </string-array>
+
 </resources>
