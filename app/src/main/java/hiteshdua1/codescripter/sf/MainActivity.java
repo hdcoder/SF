@@ -12,6 +12,7 @@ import android.view.View;
 
 import hiteshdua1.codescripter.sf.Fragments.fragment_main;
 import hiteshdua1.codescripter.sf.Fragments.fragment_map;
+import hiteshdua1.codescripter.sf.Fragments.fragment_user_profile;
 import hiteshdua1.codescripter.sf.NavigationDrawer.FragmentDrawer;
 
 public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
@@ -51,15 +52,15 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         switch (position) {
             case 0:
-                Fragment f1 = new fragment_map();
+                Fragment f1 = new fragment_user_profile();
                 ft.replace(R.id.container_body, f1);
-                getSupportActionBar().setTitle("Events");
+                getSupportActionBar().setTitle("User Profile");
                 ft.commit();
                 break;
             case 1:
-                Fragment f = new fragment_main();
+                Fragment f = new fragment_map();
                 ft.replace(R.id.container_body, f);
-                getSupportActionBar().setTitle("SF Foundation");
+                getSupportActionBar().setTitle("Centers");
                 ft.commit();
 //                Fragment f2 = new fragment_map();
 //                ft.replace(R.id.container_body, f2);
